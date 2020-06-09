@@ -1,0 +1,20 @@
+#MyEclipse Hibernate Properties
+#Sun Jun 23 15:28:51 CST 2019
+genBasicCompId=false
+sessionFactoryName=
+profile=
+daoSFId=
+jndiPath=
+detectM2M=false
+reStrategyClass=
+detectO2O=false
+springDaoFile=
+useJavaTypes=true
+keyGenerator=native
+genVersionTag=false
+sessionFactoryId=sessionFactory
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=
+configFile=/coffeestore_modrm_Version.1/src/applicationContext.xml
+createConfigFile=true

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="modrm"  extends="struts-default">
+		<!-- 登陆 -->
+		<action name="login" class="userAction">
+			<result name="success">login_success.jsp</result>
+			<result name="error">login.jsp</result>
+		</action>
+		<!-- 注册 -->
+		<action name="register" class="userAction" method="register">
+			<result name="success">register_success.jsp</result>
+		</action>
+		<!-- 登出 -->
+		<action name="logout" class="userAction" method="logout">
+			<result name="success">index.jsp</result>
+		</action>
+		<!-- 目录 -->
+		<action name="browseCatalog" class="coffeeAction" method="browseCatalog">
+			<result name="success">menu.jsp</result>
+		</action>
+		<!-- 咖啡列表 -->
+		<action name="browseCoffee" class="coffeeAction" method="browseCoffee">
+			<result name="success">browseCoffee.jsp</result>
+		</action>
+		<!-- 分页 -->
+		<action name="browseCoffeePaging" class="coffeeAction" method="browseCoffeePaging">
+			<result name="success">browseCoffeePaging.jsp</result>
+		</action>
+		<!-- 查询 -->
+		<action name="searchCoffee" class="coffeeAction" method="searchCoffee">
+			<result name="success">searchCoffee_result.jsp</result>
+		</action>
+		<!-- 添加到购物车 -->
+		<action name="addToCart" class="ShopCartAction" method="addToCart">
+			<result name="success">addToCart_success.jsp</result>
+		</action>
+		<action name="updateCart" class="ShopCartAction" method="updateCart">
+			<result name="success">showCart.jsp</result>
+		</action>
+		<!-- 清空购物车 -->
+		<action name="emptyCart" class="ShopCartAction" method="emptyCart">
+			<result name="success">showCart.jsp</result>
+		</action>
+		<!-- 修改数据 -->
+		<action name="updateMySession" class="userAction" method="updateMySession">
+			<result name="success">lookmysession.jsp</result>
+		</action>
+		<!-- 更新头像 -->
+		<action name="updateMyHeadImg" class="userAction" method="updateMyHeadImg">
+			<result name="success">lookmysession.jsp</result>
+		</action>
+		<!-- 管理咖啡 -->
+		<action name="searchAllCoffee" class="coffeeAction" method="searchAllCoffee">
+			<result name="success">shoppingManagement.jsp</result>
+		</action>
+		 <action name="goCart" class="ShopCartAction" method="goCart">
+			<result name="success">settlementCenter.jsp</result>
+		</action>
+		<!-- 把购物车里的东西添加到订单 -->
+		<action name="addorderitem" class="ShopCartAction" method="addorderitem">
+			<result name="success">"settlementCenter.jsp</result>
+		</action>
+	</package>
+</struts>
+
+
+
+
+
+
+
